@@ -6,6 +6,7 @@ body {
     background-repeat: no-repeat;
     background-position: top 480px center, top center;
     background-size: auto, contain;
+    background-color: #f3f3f3;
 
     font-family: "Raleway", sans-serif;
     font-size: 14px;
@@ -157,4 +158,155 @@ body {
 
 .promo-button {
     margin-top: -10px;
+}
+
+.catalog {
+    padding-top: 70px;
+}
+
+.catalog-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.catalog-title {
+    margin: 0;
+}
+
+.sort {
+    margin: 7px 0 0 0;
+    font-style: italic;
+    position: relative;
+}
+
+.sort::after {
+    content: "";
+
+    width: 0;
+    height: 0;
+    border-top: 6px solid #0d3351;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+
+    position: absolute;
+    right: -18px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.catalog-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    list-style: none;
+    margin: 42px 0 -20px 0;
+    padding: 0;
+    max-height: 980px;
+}
+
+.catalog-item {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 555px;
+    min-height: 304px;
+
+    margin: 0 29px 20px 0;
+    background: white;
+}
+
+.catalog-item-big {
+    min-height: 628px;
+}
+
+.catalog-item-img-row {
+    height: 113px;
+}
+
+.catalog-item-img-big-row {
+    height: 437px;
+}
+
+.catalog-item-text-row {
+    width: 480px;
+}
+
+.tour-information {
+    margin: 15px 0 15px 0;
+    padding: 0;
+}
+
+.tour-information-item {
+    display: flex;
+}
+
+.catalog-item-title {
+    display: inline-block;
+    font-size: 18px;
+    color: #00a2dd;
+
+    margin: 15px 0 0 0;
+    position: relative;
+}
+
+.catalog-item-title::after {
+    content: "";
+
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-left: 6px solid #33c7fd;
+    border-bottom: 4px solid transparent;
+
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tour-information-item dt {
+    margin: 0 5px 0 0;
+    padding: 0;
+
+    font-weight: bold;
+
+}
+
+.tour-information-item dd {
+    margin: 0;
+    padding: 0;
+}
+
+.catalog-item .price {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 30px;
+    margin: 0 0 35px 0;
+}
+
+.button-wrapper {
+    text-align: center;
+}
+
+.catalog-button {
+    margin: 26px 0 0 0;
+    position: relative;
+}
+
+.catalog-button::after {
+    content: "";
+
+    width: 0;
+    height: 0;
+    border-top: 6px solid white;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
