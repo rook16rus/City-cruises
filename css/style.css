@@ -1,0 +1,160 @@
+body {
+    padding: 0;
+    margin: 0;
+
+    background: url("../img/snake.png"), url("../img/body-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top 480px center, top center;
+    background-size: auto, contain;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #0d3351;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.section-title {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 45px;
+    background: #33c7fd;
+
+    line-height: normal;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.main-nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-menu-list {
+    display: flex;
+
+    list-style: none;
+    margin: 0;
+    padding: 35px 0 30px;
+}
+
+.header-menu-item {
+    padding: 0;
+    margin-right: 35px;
+}
+
+.header-menu-item a {
+    text-decoration: none;
+    color: #0d3351;
+}
+
+.profile {
+    padding: 35px 0 30px;
+    margin: 0 65px 0 auto;
+
+    position: relative;
+}
+
+.profile::before {
+    content: "";
+
+    width: 10px;
+    height: 12px;
+    background: url("../img/user.png") no-repeat center;
+
+    position: absolute;
+    left: -20px;
+    top: 40px;
+}
+
+.profile::after, .currency::after, .language::after {
+    content: "";
+
+    width: 0;
+    height: 0;
+    border-top: 6px solid #0d3351;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+
+    position: absolute;
+    right: -18px;
+    top: 45px;
+}
+
+.currency {
+    padding: 35px 0 30px;
+    margin: 0 65px 0 0;
+    position: relative;
+}
+
+.language {
+    padding: 35px 0 30px;
+    margin: 0 65px 0 0;
+    position: relative;
+}
+
+.phone-column {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 10px;
+}
+
+.phone-column .phone {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: normal;
+    color: #0d3351;
+    text-decoration: none;
+}
+
+.phone-column p {
+    margin: -3px 0 0 0;
+
+    font-size: 10px;
+}
+
+.promo {
+    text-align: center;
+    padding-bottom: 259px;
+}
+
+.promo-title {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.promo-title span {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 100px;
+    line-height: 155px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+.promo-button {
+    margin-top: -10px;
+}
