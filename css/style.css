@@ -47,6 +47,68 @@ body {
     text-decoration: none;
 }
 
+.button:hover {
+    background: #13b0e9;
+}
+
+.button:active {
+    background: #64d6ff;
+}
+
+.hit {
+    position: relative;
+}
+
+.promotion {
+    position: relative;
+}
+
+.hit::after, .promotion::after {
+    content: "";
+
+    position: absolute;
+    right: 45px;
+    top: -7px;
+
+    border: 44px solid #33c7fd;
+    width: 0;
+    height: 40px;
+    border-bottom: 21px solid transparent;
+
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+.promotion::after {
+    border: 44px solid #f20542;
+    border-bottom: 21px solid transparent;
+}
+
+.hit::before, .promotion::before {
+    content: "Хит продаж";
+
+    position: absolute;
+    right: 48px;
+    top: 18px;
+
+    width: 80px;
+
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    z-index: 3;
+}
+
+.promotion::before {
+    content: "Акция";
+    top: 30px;
+}
+
 .main-nav-wrapper {
     display: flex;
     justify-content: space-between;
@@ -281,10 +343,23 @@ body {
     padding: 0;
 }
 
+.price-row {
+    display: flex;
+    margin: 0 0 35px 0;
+}
+
 .catalog-item .price {
     font-family: "Roboto Slab", sans-serif;
     font-size: 30px;
-    margin: 0 0 35px 0;
+    margin: 0 25px 0 0;
+}
+
+.catalog-item .previous-price {
+    margin: 0;
+
+    font-size: 18px;
+    opacity: 0.55;
+    text-decoration: line-through;
 }
 
 .button-wrapper {
