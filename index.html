@@ -2,7 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Городские круизы</title>
         <link rel="stylesheet" href="css/style.css">
@@ -10,37 +10,41 @@
     <body>
 
     <header class="main-header">
-        <nav class="main-nav">
-            <div class="container">
-                <div class="main-nav-wrapper">
-                    <ul class="header-menu-list">
-                        <li class="header-menu-item"><a href="#">Расписание рейсов</a></li>
-                        <li class="header-menu-item"><a href="#">Вход для партнёров</a></li>
-                        <li class="header-menu-item"><a href="#">О компании</a></li>
-                    </ul>
-                    <p class="profile">Личный кабинет</p>
-                    <p class="currency">Рубль</p>
-                    <p class="language">Ru</p>
-                    <div class="phone-column">
-                        <a href="tel:88005006105" class="phone">8 800 500-61-05 </a>
-                        <p>Круглосуточная поддержка</p>
+        <div class="header-inner">
+            <nav class="main-nav">
+                <div class="container">
+                    <div class="main-nav-wrapper">
+                        <ul class="header-menu-list">
+                            <li class="header-menu-item"><a href="#">Расписание рейсов</a></li>
+                            <li class="header-menu-item"><a href="#">Вход для партнёров</a></li>
+                            <li class="header-menu-item"><a href="#">О компании</a></li>
+                        </ul>
+                        <div class="user-navigation">
+                            <p class="profile">Личный кабинет</p>
+                            <p class="currency">Рубль</p>
+                            <p class="language">Ru</p>
+                        </div>
+                        <div class="phone-column">
+                            <a href="tel:88005006105" class="phone">8 800 500-61-05 </a>
+                            <p>Круглосуточная поддержка</p>
+                        </div>
                     </div>
                 </div>
+            </nav>
+            <div class="promo">
+                <div class="container">
+                    <a href="#" class="logo">
+                        <img src="img/logo.png" width="88" height="88" alt="Логотип агенства «Городские круизы»">
+                    </a>
+                    <h2 class="section-title promo-title">Морские прогулки <span>по чёрному морю</span></h2>
+                    <a href="#" class="button promo-button">Выбрать круиз</a>
+                </div>
             </div>
-        </nav>
+        </div>
     </header>
 
     <main>
         <h1 class="visually-hidden">Главная страница туристического агенства «Городские круизы»</h1>
-        <section class="promo">
-            <div class="container">
-                <a href="#" class="logo">
-                    <img src="img/logo.png" width="88" height="88" alt="Логотип агенства «Городские круизы»">
-                </a>
-                <h2 class="section-title promo-title">Морские прогулки <span>по чёрному морю</span></h2>
-                <a href="#" class="button promo-button">Выбрать круиз</a>
-            </div>
-        </section>
         <section class="catalog">
             <div class="container">
                 <div class="catalog-header">
@@ -64,7 +68,7 @@
                             <p class="price">49 000 руб.</p>
                         </div>
                         <div class="catalog-item-img-big-row">
-                            <img src="img/catalog-1.jpg" width="555" height="437" alt="Морской круиз в Анапу">
+                            <img src="img/catalog-1.jpg" alt="Морской круиз в Анапу">
                         </div>
                     </li>
                     <li class="catalog-item">
@@ -83,7 +87,7 @@
                             <p class="price">14 800 руб.</p>
                         </div>
                         <div class="catalog-item-img-row">
-                            <img src="img/catalog-2.jpg" width="555" height="113" alt="Морской круиз в Новороссийск">
+                            <img src="img/catalog-2.jpg" alt="Морской круиз в Новороссийск">
                         </div>
                     </li>
                     <li class="catalog-item promotion">
@@ -105,7 +109,7 @@
                             </div>
                         </div>
                         <div class="catalog-item-img-row">
-                            <img src="img/catalog-3.jpg" width="555" height="113" alt="Обзорная морская прогулка с экскурсией">
+                            <img src="img/catalog-3.jpg" alt="Обзорная морская прогулка с экскурсией">
                         </div>
                     </li>
                     <li class="catalog-item">
@@ -124,7 +128,7 @@
                             <p class="price">7 000 руб.</p>
                         </div>
                         <div class="catalog-item-img-row">
-                            <img src="img/catalog-4.jpg" width="555" height="113" alt="Морская прогулка в Геленджик">
+                            <img src="img/catalog-4.jpg" alt="Морская прогулка в Геленджик">
                         </div>
                     </li>
                     <li class="catalog-item">
@@ -143,7 +147,7 @@
                             <p class="price">14 800 руб.</p>
                         </div>
                         <div class="catalog-item-img-row">
-                            <img src="img/catalog-5.jpg" width="555" height="112" alt="Морская прогулка в Абрау-Дюрсо">
+                            <img src="img/catalog-5.jpg" alt="Морская прогулка в Абрау-Дюрсо">
                         </div>
                     </li>
                 </ul>
@@ -156,12 +160,12 @@
             <div class="container">
                 <h2 class="section-title gallery-title">Фотографии с круизов</h2>
                 <ul class="gallery-list">
-                    <li class="gallery-item-big"><img src="img/gallery-1.jpg" width="570" height="320" alt="Фотография с круиза"></li>
-                    <li class="gallery-item"><img src="img/gallery-2.jpg" width="285" height="320" alt="Фотография с круиза"></li>
-                    <li class="gallery-item"><img src="img/gallery-3.jpg" width="285" height="320" alt="Фотография с круиза"></li>
-                    <li class="gallery-item"><img src="img/gallery-4.jpg" width="285" height="320" alt="Фотография с круиза"></li>
-                    <li class="gallery-item"><img src="img/gallery-5.jpg" width="285" height="320" alt="Фотография с круиза"></li>
-                    <li class="gallery-item-big"><img src="img/gallery-6.jpg" width="570" height="320" alt="Фотография с круиза"></li>
+                    <li class="gallery-item-big"><img src="img/gallery-1.jpg" alt="Фотография с круиза"></li>
+                    <li class="gallery-item"><img src="img/gallery-2.jpg" alt="Фотография с круиза"></li>
+                    <li class="gallery-item"><img src="img/gallery-3.jpg" alt="Фотография с круиза"></li>
+                    <li class="gallery-item"><img src="img/gallery-4.jpg" alt="Фотография с круиза"></li>
+                    <li class="gallery-item"><img src="img/gallery-5.jpg" alt="Фотография с круиза"></li>
+                    <li class="gallery-item-big"><img src="img/gallery-6.jpg" alt="Фотография с круиза"></li>
                 </ul>
             </div>
         </section>
@@ -170,7 +174,7 @@
                 <h2 class="section-title reviews-title">Отзывы</h2>
                 <ul class="reviews-list">
                     <li class="reviews-item">
-                        <img src="img/review-1.jpg" width="360" height="160" alt="Аватарка Алексея Петрова">
+                        <img src="img/review-1.jpg" alt="Аватарка Алексея Петрова">
                         <blockquote>
                             <cite>Алексей Петров</cite>
                             <p class="reviews-item-tour">Морской круиз в Новороссийск</p>
@@ -178,7 +182,7 @@
                         </blockquote>
                     </li>
                     <li class="reviews-item">
-                        <img src="img/review-2.jpg" width="360" height="160" alt="Аватарка Михаила Кузнецова">
+                        <img src="img/review-2.jpg" alt="Аватарка Михаила Кузнецова">
                         <blockquote>
                             <cite>Михаил Кузнецов</cite>
                             <p class="reviews-item-tour">Морская прогулка в Абрау-Дюрсо</p>
@@ -186,7 +190,7 @@
                         </blockquote>
                     </li>
                     <li class="reviews-item">
-                        <img src="img/review-3.jpg" width="360" height="160" alt="Аватарка Елены Фёдоровой">
+                        <img src="img/review-3.jpg" alt="Аватарка Елены Фёдоровой">
                         <blockquote>
                             <cite>Елена Фёдорова</cite>
                             <p class="reviews-item-tour">Морской круиз в Анапу</p>
@@ -199,33 +203,32 @@
                 </div>
             </div>
         </section>
-
-        <footer class="main-footer">
-            <div class="container">
-                <div class="footer-wrapper">
-                    <ul class="footer-menu-list">
-                        <li class="footer-menu-item"><a href="#">Расписание рейсов</a></li>
-                        <li class="footer-menu-item"><a href="#">Вход для партнёров</a></li>
-                        <li class="footer-menu-item"><a href="#">О компании</a></li>
-                    </ul>
-                    <div class="socials">
-                        <p>Будь на связи:</p>
-                        <ul class="socials-list">
-                            <li class="socials-item socials-vk"><a href="#">Вконтакте</a></li>
-                            <li class="socials-item socials-od"><a href="#">Одноклассники</a></li>
-                            <li class="socials-item socials-yt"><a href="#">Youtube</a></li>
-                            <li class="socials-item socials-inst"><a href="#">Instagram</a></li>
-                        </ul>
-                    </div>
-                    <div class="support">
-                        <p class="phone">8 800 500-61-05 </p>
-                        <p class="support-text">Круглосуточная поддержка</p>
-                        <p class="copyright">© 2016 OOO «Городские Круизы»</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
     </main>
 
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <ul class="footer-menu-list">
+                    <li class="footer-menu-item"><a href="#">Расписание рейсов</a></li>
+                    <li class="footer-menu-item"><a href="#">Вход для партнёров</a></li>
+                    <li class="footer-menu-item"><a href="#">О компании</a></li>
+                </ul>
+                <div class="socials">
+                    <p>Будь на связи:</p>
+                    <ul class="socials-list">
+                        <li class="socials-item socials-vk"><a href="#">Вконтакте</a></li>
+                        <li class="socials-item socials-od"><a href="#">Одноклассники</a></li>
+                        <li class="socials-item socials-yt"><a href="#">Youtube</a></li>
+                        <li class="socials-item socials-inst"><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="support">
+                    <p class="phone">8 800 500-61-05 </p>
+                    <p class="support-text">Круглосуточная поддержка</p>
+                    <p class="copyright">© 2016 OOO «Городские Круизы»</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     </body>
 </html>
